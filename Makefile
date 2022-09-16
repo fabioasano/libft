@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/09/17 00:12:40 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/09/17 01:22:39 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ SOURCES = \
 	  ft_toupper.c \
 	  ft_tolower.c \
 	  ft_strchr.c \
-	  ft_strrchr.c
+	  ft_strrchr.c \
+	  ft_strncmp.c
 
 OBJECTS = $(SOURCES:.c=.o)
 NAME = libft.a	

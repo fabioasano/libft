@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 13:11:07 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/16 23:48:13 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/17 01:23:22 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ size_t  ft_strlcat(char *dst, const char *src, size_t size);
 int     ft_toupper(int c);
 int     ft_tolower(int c);
 char    *ft_strchr(const char *s, int c);
-
+char    *ft_strrchr(const char *s, int c);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
