@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
+#    Updated: 2022/09/07 15:32:38 by fsenishi         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+CC = gcc
+NAME = libft.a
+
+FLAGS = -Wall -Wextra -Werro
+
+all: lib_ft
+
+lib_ft: \
+	ft_isalpha.o \
+	ft_isdigit.o
+ 	ar -rcs $(NAME) *.o
+
+.%.o: .%.c .%.h
+	$(CC) $(FLAGS) $< $(NAME)
+clean:
+
+fclean:
+re:
+
+
