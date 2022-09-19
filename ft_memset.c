@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 22:01:32 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/17 01:00:46 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/19 21:17:51 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		str[n - 1] = c;
 		n--;
 	}
-	return (s);
+	return (str);
 }

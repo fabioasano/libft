@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/09/17 01:22:39 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/09/19 19:22:08 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,11 @@ SOURCES = \
 	  ft_tolower.c \
 	  ft_strchr.c \
 	  ft_strrchr.c \
-	  ft_strncmp.c
+	  ft_strncmp.c \
+	  ft_memchr.c \
+	  ft_memcmp.c \
+	  ft_strnstr.c \
+	  ft_atoi.c
 
 OBJECTS = $(SOURCES:.c=.o)
 NAME = libft.a	
@@ -43,7 +47,7 @@ $(NAME): $(OBJECTS)
 	$(CC) -c $(FLAGS) $< 
 
 clean:
-	rm - rf $(OBJECTS)
+	rm -rf $(OBJECTS)
 
 fclean:
 	rm -rf $(NAME)

@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 21:59:43 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/19 20:54:52 by fsenishi         ###   ########.fr       */
+/*   Created: 2022/09/17 21:53:12 by fsenishi          #+#    #+#             */
+/*   Updated: 2022/09/17 22:13:33 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h> 
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	len;
+	size_t	i;
+	unsigned char 	*ps;
+	unsigned char	src;
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
+	src = (unsigned char)c;
+	ps = (unsigned char *)s;	
+	i = 0;
+	while ((i < n) && (ps[i] != '\0'))
+	{
+		if (ps[i] == src)
+			return (ps);
+		i++;
+	}
+	return (NULL);
 }
+// C e a área apontada são unsigned char.

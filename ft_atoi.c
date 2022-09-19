@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 21:59:43 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/19 20:54:52 by fsenishi         ###   ########.fr       */
+/*   Created: 2022/09/19 17:43:19 by fsenishi          #+#    #+#             */
+/*   Updated: 2022/09/19 18:47:30 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h> 
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_atoi(const char *nptr)
 {
-	size_t	len;
+	int	res;
+	int	sign;
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
+	res = 0;
+	sign = 1;
+	while (*nptr == ' '  || (*nptr >= 9 && *nptr <= 13))
+		nptr++;
+	if (*nptr == '+' || *nptr == '-')
+	{
+		if (*nptr =='-')
+			sign *= -1;
+		nptr++;
+	}
+	while (ft_isdigit(*nptr))
+	{
+		res = res * 10 + *nptr - '0';
+		nptr++;
+	}
+	return (res * sign);
 }
