@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/09/19 19:22:08 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/09/23 01:05:32 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,15 @@ SOURCES = \
 	  ft_memchr.c \
 	  ft_memcmp.c \
 	  ft_strnstr.c \
-	  ft_atoi.c
+	  ft_atoi.c \
+	  ft_strdup.c \
+	  ft_calloc.c \
+	  ft_substr.c \
+	  ft_strjoin.c \
+	  ft_putchar_fd.c \
+	  ft_putstr_fd.c \
+	  ft_putendl_fd.c \
+	  ft_putnbr_fd.c
 
 OBJECTS = $(SOURCES:.c=.o)
 NAME = libft.a	

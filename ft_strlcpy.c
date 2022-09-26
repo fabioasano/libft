@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 00:33:06 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/17 00:05:58 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/21 23:05:40 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	
- 	i = 0;
+
+	i = 0;
 	if (size == 0)
 		return (ft_strlen(src));
 	while (i < (size - 1) && src[i] != '\0')
@@ -27,6 +27,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	dest[i] = '\0';
 	return (ft_strlen(src));
 }
-
-//retorna o tamanho total da string, ou  seja, o tamanho do src.
-//

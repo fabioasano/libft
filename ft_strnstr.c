@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 22:28:42 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/19 21:05:15 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/21 23:06:32 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	bsize = ft_strlen(big);
 	lsize = ft_strlen(little);
-
 	if (lsize == 0)
 		return ((char *)big);
 	if (lsize > bsize)
@@ -37,5 +36,4 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		csize--;
 	}
 	return (NULL);
-
 }

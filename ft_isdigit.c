@@ -6,13 +6,13 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 21:48:17 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/11 01:07:39 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/21 20:58:11 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_digit(int c)
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-        return (1);
-    return (0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }

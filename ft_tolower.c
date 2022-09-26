@@ -6,13 +6,13 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:14:19 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/17 00:09:24 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/21 23:07:11 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if((c >= 65) && (c <= 90))
+	if ((c >= 65) && (c <= 90))
 		return (c + (97 - 65));
 	return (c);
 }

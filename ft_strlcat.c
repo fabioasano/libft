@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:01:34 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/17 00:08:39 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/21 23:03:55 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ static	size_t	ft_lendest(char *dest, size_t size)
 		i++;
 	return (i);
 }	
+
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	d;

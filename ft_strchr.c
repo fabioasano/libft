@@ -6,19 +6,24 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:21:33 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/17 00:10:32 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/09/22 18:31:20 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while ((s[i] != c) && s[i])
+	while (s[i])
+	{
+		if (s[i] == (unsigned char)c)
+			return ((char *)s + i);
 		i++;
-	return ((char *)s);
-
+	}
+	if (!c && s[i] == '\0')
+		return ((char *)s + i);
+	return (NULL);
 }
-//The strchr() function returns a pointer to the first occurrence
-//of the character c in the string s.
