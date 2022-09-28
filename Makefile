@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/09/23 01:05:32 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/09/28 02:48:54 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,12 @@ SOURCES = \
 	  ft_putchar_fd.c \
 	  ft_putstr_fd.c \
 	  ft_putendl_fd.c \
-	  ft_putnbr_fd.c
+	  ft_putnbr_fd.c \
+	  ft_itoa.c \
+	  ft_striteri.c \
+	  ft_strmapi.c \
+	  ft_strtrim.c \
+	  ft_split.c
 
 OBJECTS = $(SOURCES:.c=.o)
 NAME = libft.a	

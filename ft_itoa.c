@@ -3,61 +3,64 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsenishi <fsenishi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 22:52:28 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/25 01:30:52 by fsenishi         ###   ########.fr       */
+/*   Created: 2022/09/26 16:45:41 by fsenishi          #+#    #+#             */
+/*   Updated: 2022/09/26 17:46:42 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char *convert_itoa(char *str, size_t size, 
-		unsigned int num, unsigned int is_negative)
+static char	*ft_array(char *x, unsigned int number, int len)
 {
-	str[size] = '\0';
-	while (size)
+	while (number > 0)
 	{
-		str[size] = (num % 10) + 48;
-		num /= 10;
-		size--;
+		x[len--] = 48 + (number % 10);
+		number = number / 10;
 	}
-	if (is_negative)
-		str[0] = '-';
-	return (str);
+	return (x);
 }
 
-size_t	ft_numlen(int num)
+static int	ft_numlen(int n)
 {
-	size_t	len;
+	int					len;
 
-	len = 1;
-	if (num < 0)
-		len++;
-	num /= 10;
-	while (num)
+	len = 0;
+	if (n <= 0)
+		len = 1;
+	while (n != 0)
 	{
-		num /= 10;
 		len++;
+		n = n / 10;
 	}
 	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	size_t			n_digits;
-	unsigned int	is_negative;
-	char			*str;
+	unsigned int		number;
+	char				*x;
+	int					len;
+	int					sign;
 
-	n_digits = ft_numlen(n);
-	is_negative = 0;
+	sign = 1;
+	len = ft_numlen(n);
+	x = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(x))
+		return (NULL);
+	x[len] = '\0';
+	len--;
+	if (n == 0)
+		x[0] = '0';
 	if (n < 0)
 	{
-		is_negative = 1;
-		n = -n;
+		sign *= -1;
+		number = n * sign;
+		x[0] = '-';
 	}
-	str = malloc(sizeof(char) * (n_digits + 1));
-	if (str == NULL)
-		return (NULL);
-	return (convert_itoa(str, n_digits, (unsigned int)n, is_negative));
+	else
+		number = n;
+	x = ft_array(x, number, len);
+	return (x);
 }
