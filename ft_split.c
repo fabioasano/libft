@@ -12,6 +12,26 @@
 
 #include "libft.h"
 
+static int      count_words(const char *str, char c)
+{
+        int i;
+        int trigger;
+
+        i = 0;
+        trigger = 0;
+        while (*str)
+        {
+                if (*str != c && trigger == 0)
+                {
+                        trigger = 1;
+                        i++;
+                }
+                else if (*str == c)
+                        trigger = 0;
+                str++;
+        }
+        return (i);
+}
 
 static char	*word_dup(const char *str, int start, int finish)
 {
