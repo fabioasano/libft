@@ -1,0 +1,65 @@
+[33mcommit 9c9094050827d262f6165f5c96f5da5eb21e0f87[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: fabioasano_Ubuntu <fabioasano@gmail.com>
+Date:   Wed Sep 28 16:28:40 2022 -0300
+
+    putenld and memmove adjusts
+
+[33mcommit fc1d022bf6766a257458191d3ade717723208bcf[m
+Author: Fabio Casa <fabioasa@gmail.com>
+Date:   Wed Sep 28 10:00:12 2022 -0300
+
+    ft_memcpy.c adjust
+
+[33mcommit de2d84d533c9d2c658bc0e92b4fe3008f53d4792[m
+Author: Fabio Casa <fabioasa@gmail.com>
+Date:   Wed Sep 28 09:30:00 2022 -0300
+
+    header adjust ft_strlen
+
+[33mcommit e8bb8e06bc59f406551bb5327a84eb35d77767a2[m
+Author: fsenishi <fsenishi@student.42.sp.org.br>
+Date:   Wed Sep 28 04:11:11 2022 +0200
+
+    all functions -split
+
+[33mcommit 50627c1129c9d7f09976fc86cc154fbd0b5d746f[m
+Author: fsenishi <fsenishi@student.42.sp.org.br>
+Date:   Mon Sep 26 16:26:41 2022 +0200
+
+    atualizações
+
+[33mcommit c73afd681cb31a41320f6042395457795e0876e5[m
+Author: fabioasanoW10 <fabioasano@gmail.com>
+Date:   Sun Sep 25 01:46:21 2022 -0300
+
+    add itoa no tested
+
+[33mcommit c6d4fd7d43d43dc32e0168bd02094264418e4767[m
+Author: Fabio Casa <fabioasa@gmail.com>
+Date:   Tue Sep 20 21:02:03 2022 -0300
+
+    add ft_strdup.c
+
+[33mcommit 834489753c406cebb8cd68179bd5491689dfbd43[m
+Author: fsenishi <fsenishi@student.42.sp.org.br>
+Date:   Mon Sep 19 21:21:57 2022 +0200
+
+    add atoi and strnstr funciotns
+
+[33mcommit bf1b61eb1f91859caebdd9b5073725027e87822a[m
+Author: fsenishi <fsenishi@student.42.sp.org.br>
+Date:   Sat Sep 17 01:26:11 2022 +0200
+
+    add ft_strncmp.c
+
+[33mcommit 426830f2c20168b89d79d5fd0a409b94cd00c074[m
+Author: fsenishi <fsenishi@student.42.sp.org.br>
+Date:   Sat Sep 17 01:10:33 2022 +0200
+
+    inserção exercícios libft
+
+[33mcommit 2eb3332e7f9ca5bcc51feeecf3f5940ab922b32b[m
+Author: fabioasano <104102260+fabioasano@users.noreply.github.com>
+Date:   Wed Sep 14 12:34:30 2022 -0300
+
+    Initial commit
