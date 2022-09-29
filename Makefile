@@ -47,9 +47,16 @@ SOURCES = \
 	  ft_strtrim.c \
 	  ft_split.c
 
+BONUS = ft_lstnew.c
+
+BONUS_OBJECTS = $(BONUS:.c=.o)
+
 OBJECTS = $(SOURCES:.c=.o)
+
 NAME = libft.a	
+
 FLAGS = -Wall -Wextra -Werror
+
 CC = gcc
 
 all: $(NAME) 
@@ -60,11 +67,14 @@ $(NAME): $(OBJECTS)
 	$(CC) -c $(FLAGS) $< 
 
 clean:
-	rm -rf $(OBJECTS)
+	rm -rf $(OBJECTS) $(BONUS_OBJECTS)
 
 fclean:
 	rm -rf $(NAME)
 
 re:        fclean all
 
-.PHONY: all clean fclean re
+bonus: $(BONUS) $(BONUS_OBJECTS)
+	ar -rcs $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
+
+.PHONY: all clean fclean re bonus
