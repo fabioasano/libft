@@ -47,7 +47,13 @@ SOURCES = \
 	  ft_strtrim.c \
 	  ft_split.c
 
-BONUS = ft_lstnew.c
+BONUS = ft_lstnew.c \
+	ft_lstadd_front.c \
+	ft_lstsize.c \
+	ft_lstlast.c \
+	ft_lstadd_back.c \
+	ft_lstdelone.c \
+	ft_lstclear.c
 
 BONUS_OBJECTS = $(BONUS:.c=.o)
 
