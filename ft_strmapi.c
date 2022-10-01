@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 23:37:40 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/26 23:53:50 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/10/01 02:59:31 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	if (!s)
 		return (NULL);

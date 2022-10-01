@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 21:08:46 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/09/27 22:08:10 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/10/01 02:19:36 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ static int	found_set(char const c, char const *set)
 	}
 	return (0);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trimmed;
@@ -39,8 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (lasttrim > firsttrim && found_set(s1[lasttrim - 1], set))
 		lasttrim--;
 	trimmed = malloc(sizeof(char) * (lasttrim - firsttrim + 1));
-	if (trimmed == NULL) 
-		return (NULL); 
+	if (trimmed == NULL)
+		return (NULL);
 	i = 0;
 	while (lasttrim > firsttrim)
 	{
@@ -50,5 +51,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	trimmed[i] = '\0';
 	return (trimmed);
-
 }
