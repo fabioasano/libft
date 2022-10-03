@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 02:09:04 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/10/01 04:31:39 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/10/01 17:51:47 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if (lst)
+	if (lst && del)
 	{
 		while (*lst)
 		{
@@ -24,5 +24,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 			ft_lstdelone(*lst, del);
 			(*lst) = tmp;
 		}
+		lst = NULL;
 	}
 }
