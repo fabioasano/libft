@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/10/01 18:05:48 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/10/03 16:20:18 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ CC = gcc
 all: $(NAME) 
 
 $(NAME): $(OBJECTS)
-	ar -rcs $(NAME) $(OBJECTS)
+	ar -rc $(NAME) $(OBJECTS)
 %.o: %.c libft.h
 	$(CC) -c $(FLAGS) $< 
 
@@ -82,6 +82,6 @@ fclean: clean
 re:        fclean all
 
 bonus: all $(BONUS) $(BONUS_OBJECTS)
-	ar -rcs $(NAME) $(BONUS_OBJECTS)
+	ar -rc $(NAME) $(BONUS_OBJECTS)
 
 .PHONY: all clean fclean re bonus

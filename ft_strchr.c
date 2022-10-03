@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:21:33 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/10/01 18:48:23 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/10/03 18:15:43 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,5 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
-	if (!c && s[i] == '\0')
-		return ((char *)s + i);
 	return (NULL);
 }

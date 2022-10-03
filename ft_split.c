@@ -6,7 +6,7 @@
 /*   By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 22:08:41 by fsenishi          #+#    #+#             */
-/*   Updated: 2022/10/01 02:30:33 by fsenishi         ###   ########.fr       */
+/*   Updated: 2022/10/03 19:26:32 by fsenishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ static char	*word_cut(const char *str, int start, int finish)
 
 	i = 0;
 	word = malloc((finish - start + 1) * sizeof(char));
+	if (!word)
+		return (NULL);
 	while (start < finish)
 		word[i++] = str[start++];
 	word[i] = '\0';
