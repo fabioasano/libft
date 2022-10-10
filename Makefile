@@ -6,7 +6,7 @@
 #    By: fsenishi <fsenishi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/07 15:02:34 by fsenishi          #+#    #+#              #
-#    Updated: 2022/10/03 16:20:18 by fsenishi         ###   ########.fr        #
+#    Updated: 2022/10/09 00:40:49 by fsenishi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,7 @@ NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror -I.
 
-CC = gcc
+CC = cc
 
 all: $(NAME) 
 

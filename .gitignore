@@ -1,2 +1,12 @@
-*.o
-libftTester
+# Ignore all
+
+*
+
+
+# Except this especific files:
+
+
+!libft.h
+!Makefile
+!ft_*.c
+!.gitignore
